@@ -68,3 +68,13 @@ readline.question('What pets are you looking for? ', input => {
 
     readline.close();
 });
+
+
+// I had a difficult time intaking the pet data without a database or front end,
+// so I made it into an array that can be added to if more data is needed. 
+// This is not the most efficient way, but I'm not sure how to better do it without a db or front edn. 
+
+//As of now the type function only works with exact capitalization and spelling,
+// but I think if I had more time I could add a function that makes it work without case sensitivity.
+
+// if there is nothing in the data that matches the input, it will return an empty array.

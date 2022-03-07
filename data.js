@@ -11,7 +11,7 @@ let data = [
     }, {
         id: 4, name: 'Lassie', type: 'Dog', gender: 'Spayed', zipcode: 97215 
     }, {
-        id: 5, name: 'Fluffy', type: 'Rabbit', gender: 'Female', zipcode: 97215 
+        id: 5, name: 'Fluffly', type: 'Rabbit', gender: 'Female', zipcode: 97215 
     }, {
         id: 6, name: 'Rhea', type: 'Cat', gender: 'Spayed', zipcode: 97215 
     }, {
