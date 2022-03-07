@@ -38,7 +38,7 @@ readline.question('What pets are you looking for? ', input => {
             //iterate through the data and see if data at that index's type is equal to the input type.
             // if the type is equal to the input, push this to the filtered list.
             for (let i = 0; i < data.length; i++) {
-                if (data[i].type === input) {
+                if (data[i].type.toLowerCase() === input.toLowerCase()) {
                     filteredList.push(data[i]);
                 }
             }
@@ -55,7 +55,7 @@ readline.question('What pets are you looking for? ', input => {
             let filteredList = [];
             // iterate through data to see if the zipcode and type are the same as the input zipcode and type
             for (let i = 0; i < data.length; i++) {
-                if (input.includes(data[i].zipcode) && input.includes(data[i].type)) {
+                if (input.includes(data[i].zipcode) && input.toLowerCase().includes(data[i].type.toLowerCase())) {
                     filteredList.push(data[i]);
                 }
             }
@@ -74,7 +74,6 @@ readline.question('What pets are you looking for? ', input => {
 // so I made it into an array that can be added to if more data is needed. 
 // This is not the most efficient way, but I'm not sure how to better do it without a db or front edn. 
 
-//As of now the type function only works with exact capitalization and spelling,
-// but I think if I had more time I could add a function that makes it work without case sensitivity.
-
 // if there is nothing in the data that matches the input, it will return an empty array.
+
+// if you wanted to add adoption information you could add key/value pairs to the objects in the array.
