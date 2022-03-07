@@ -75,5 +75,7 @@ readline.question('What pets are you looking for? ', input => {
 // This is not the most efficient way, but I'm not sure how to better do it without a db or front edn. 
 
 // if there is nothing in the data that matches the input, it will return an empty array.
+// This works with an empty input or an input unrelated to anything in zipcode or type.
 
 // if you wanted to add adoption information you could add key/value pairs to the objects in the array.
+// the functions would then be the same. See if eligibility input is the same as the eligibility on the pets object.
