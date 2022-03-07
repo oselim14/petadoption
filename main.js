@@ -12,3 +12,15 @@ function zipcodeFilter() {
     console.log(filteredList);
 }
 zipcodeFilter();
+
+function typeFilter(){
+    let input = 'Dog';
+    let filteredList = [];
+    for (let i=0; i < data.length; i++){
+        if (data[i].type === input){
+            filteredList.push(data[i]);
+        }
+    }
+    console.log(filteredList);
+}
+typeFilter();
