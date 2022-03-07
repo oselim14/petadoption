@@ -1,3 +1,6 @@
+// seed data as an array of objects
+// in order to add more data you can push onto the array
+
 let data = [
     {
         id: 1, name: 'Snoopy', type: 'Dog', gender: 'Male', zipcode: 97205 
